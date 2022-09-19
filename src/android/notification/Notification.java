@@ -365,8 +365,6 @@ public final class Notification {
         }
 
         grantPermissionToPlaySoundFromExternal();
-        new NotificationVolumeManager(context, options)
-            .adjustAlarmVolume();
         getNotMgr().notify(getId(), builder.build());
     }
 
